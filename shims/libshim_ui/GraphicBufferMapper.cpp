@@ -16,7 +16,11 @@ using android::status_t;
 
 extern "C" {
 
+#ifdef __LP64__
 status_t _ZN7android19GraphicBufferMapper9lockAsyncEPK13native_handlemmRKNS_4RectEPPviPiS9_(
+#else
+status_t _ZN7android19GraphicBufferMapper9lockAsyncEPK13native_handleyyRKNS_4RectEPPviPiS9_(
+#endif
         void* thisptr, buffer_handle_t handle, uint64_t producerUsage, uint64_t consumerUsage,
         const Rect& bounds, void** vaddr, int fenceFd, int32_t* /*outBytesPerPixel*/,
         int32_t* /*outBytesPerStride*/) {

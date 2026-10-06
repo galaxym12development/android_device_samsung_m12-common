@@ -1284,3 +1284,6 @@ on boot
 on property:sys.boot_completed=1
     write /sys/class/power_supply/battery/boot_completed "1"
     write /sys/class/power_supply/battery/batt_temp_control_test "0"
+
+on post-fs-data
+    write /sys/module/scsc_wlan/parameters/lls_disabled 1

@@ -20,7 +20,9 @@
         "target_path": "hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
     },
     {
-        "repository": "android_kernel_samsung_exynos850",
-        "target_path": "kernel/samsung/exynos850"
+        "remote": "galaxym12development",
+        "repository": "android_kernel_samsung_m12",
+        "target_path": "kernel/samsung/exynos850",
+        "branch": "android-14.0"
     }
 ]

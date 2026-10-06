@@ -30,5 +30,11 @@
         "repository": "android_vendor_samsung",
         "target_path": "vendor/samsung",
         "branch": "lineage-21"
+    },
+    {
+        "remote": "galaxym12development",
+        "repository": "android_packages_apps_ims",
+        "target_path": "packages/apps/Ims",
+        "branch": "lineage-21"
     }
 ]

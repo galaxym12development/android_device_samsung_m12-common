@@ -147,6 +147,17 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
+# IMS
+PRODUCT_PACKAGES += \
+    Ims
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/permissions/privapp-permissions-me.phh.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-me.phh.ims.xml
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.dbg.allow_ims_off=1 \
+    persist.dbg.volte_avail_ovr=1
+
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \

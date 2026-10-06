@@ -90,10 +90,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
-    android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.2-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
     libshim_ui
 
 PRODUCT_PACKAGES += \
@@ -337,10 +334,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_hceese/com.nxp.mifare.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_hcesim/com.nxp.mifare.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_hcesimese/com.nxp.mifare.xml
-
-# VNDK
-PRODUCT_PACKAGES += \
-    libutils-v32
 
 # WiFi
 PRODUCT_PACKAGES += \

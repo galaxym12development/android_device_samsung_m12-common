@@ -90,3 +90,10 @@ genfscon sysfs /power/cstate_control                                            
 
 # Proc
 genfscon proc /sys/vm/swappiness                                                                                           u:object_r:proc_swappiness:s0
+
+# SoC
+genfscon sysfs /devices/soc0/machine                                                                                       u:object_r:sysfs_soc_info:s0
+genfscon sysfs /devices/soc0/revision                                                                                      u:object_r:sysfs_soc_info:s0
+
+# Block
+genfscon sysfs /devices/platform/12100000.dwmmc0/mmc_host/mmc0/mmc0:0001/block/mmcblk0/queue                          u:object_r:sysfs_block_writable:s0

@@ -22,3 +22,5 @@ allow hal_power_default {
 
 allow hal_power_default sysfs:file { open write };
 dontaudit hal_power_default self:capability { dac_override };
+
+set_prop(hal_power_default, vendor_power_prop)

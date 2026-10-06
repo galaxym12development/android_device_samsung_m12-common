@@ -7,3 +7,6 @@ allow hal_audio_default rild:unix_stream_socket connectto;
 get_prop(hal_audio_default, vendor_radio_prop);
 
 wakelock_use(hal_audio_default);
+
+# Optional radio props, call audio does not depend on them
+dontaudit hal_audio_default radio_prop:file r_file_perms;

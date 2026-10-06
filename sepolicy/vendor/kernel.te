@@ -13,3 +13,8 @@ allow kernel app_efs_file:dir create_dir_perms;
 allow kernel app_efs_file:file create_file_perms;
 
 r_dir_file(kernel, sysfs_sec_key);
+
+allow kernel param_block_device:blk_file w_file_perms;
+
+# devtmpfs creates /dev/bus before ueventd does
+dontaudit kernel device:dir create;

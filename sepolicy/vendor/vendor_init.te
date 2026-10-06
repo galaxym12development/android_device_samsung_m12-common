@@ -14,3 +14,10 @@ allow vendor_init tmpfs:lnk_file create;
 allow vendor_init vts_status_prop:file read;
 allow vendor_init swap_block_device:blk_file setattr;
 
+set_prop(vendor_init, vendor_power_prop)
+
+# ro.product_ship, persist.rmnet.*, persist.data.*
+dontaudit vendor_init default_prop:property_service set;
+
+# sys.config.amp_to_app_switch
+dontaudit vendor_init system_prop:property_service set;

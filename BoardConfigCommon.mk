@@ -66,9 +66,6 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=exynos850 androidboot.selinux=enfor
 ## Camera
 $(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
-## Display
-TARGET_SCREEN_DENSITY := 280
-
 ## Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 6018826240
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions

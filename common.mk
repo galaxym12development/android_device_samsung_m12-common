@@ -14,10 +14,10 @@
 # limitations under the License.
 #
 
-COMMON_PATH := device/samsung/a21s-common
+COMMON_PATH := device/samsung/m12-common
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/samsung/a21s-common/a21s-common-vendor.mk)
+$(call inherit-product, vendor/samsung/m12-common/m12-common-vendor.mk)
 
 PRODUCT_CHARACTERISTICS := phone
 

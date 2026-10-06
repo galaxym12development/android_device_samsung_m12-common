@@ -13,13 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-COMMON_PATH := device/samsung/a21s-common
+COMMON_PATH := device/samsung/m12-common
 
 ## Include path
 TARGET_SPECIFIC_HEADER_PATH := $(COMMON_PATH)/include
 
 ## Inherit proprietary vendor configuartion
-include vendor/samsung/a21s-common/BoardConfigVendor.mk
+include vendor/samsung/m12-common/BoardConfigVendor.mk
 
 ## Architecture
 TARGET_ARCH := arm64

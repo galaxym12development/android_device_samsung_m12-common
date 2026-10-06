@@ -1287,3 +1287,14 @@ on property:sys.boot_completed=1
 
 on post-fs-data
     write /sys/module/scsc_wlan/parameters/lls_disabled 1
+
+# Double tap to wake: the touch nodes are system:radio
+service vendor.power-hal-aidl /vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr
+    override
+    class hal
+    user root
+    group system radio
+    priority -20
+
+on boot
+    chmod 0664 /sys/kernel/gpu/gpu_min_clock

@@ -133,6 +133,12 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
 -vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl.so
 -vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
 
+# Camera gralloc - from a21s A217FXXU8DVF6
+vendor/lib/hw/gralloc.exynos850.so
+vendor/lib64/hw/gralloc.exynos850.so
+vendor/lib/libGrallocMapperCamera.so
+vendor/lib64/libGrallocMapperCamera.so
+
 # Firmware
 vendor/firmware/MCD_NACHO_slog.bin
 vendor/firmware/abox_tplg.bin
@@ -186,7 +192,7 @@ vendor/etc/gnss/gps.debug.cfg
 -vendor/lib/libExynosHWCService.so
 -vendor/lib/libdrmresource.so
 -vendor/lib/libexynosdisplay.so
--vendor/lib/libexynosgraphicbuffer.so|7561e58cc9490c993341d7bdb3131336d4f5b8c2|9aa03e9f542710eaaddde355fa2aba0b1ee351ba
+-vendor/lib/libexynosgraphicbuffer.so|7561e58cc9490c993341d7bdb3131336d4f5b8c2|8fdc3908aa9d219307f2d3cfb948666f1a16a604
 -vendor/lib/libexynosscaler.so
 -vendor/lib/libexynosutils.so
 -vendor/lib/libexynosv4l2.so
@@ -195,7 +201,7 @@ vendor/etc/gnss/gps.debug.cfg
 -vendor/lib64/libacryl.so
 -vendor/lib64/libdrmresource.so
 -vendor/lib64/libexynosdisplay.so
--vendor/lib64/libexynosgraphicbuffer.so|71160ac1360f99f8175843323d2dccbaeeecaa4a|c2422607bdb7ad5062aa6da13eff956500248c5d
+-vendor/lib64/libexynosgraphicbuffer.so|71160ac1360f99f8175843323d2dccbaeeecaa4a|64965496dd46e61709f43e9c7f2065d680bd3c59
 -vendor/lib64/libexynosscaler.so
 -vendor/lib64/libexynosutils.so
 -vendor/lib64/libexynosv4l2.so

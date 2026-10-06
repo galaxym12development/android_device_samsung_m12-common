@@ -70,8 +70,18 @@ function blob_fixup() {
             xxd -p -c0 "${2}" | sed "s/800e40f9e10316aa820c8052e30315aa/800e40f9e10316aa820c8052080080d2/g" | xxd -r -p > "${2}".patched
             mv "${2}".patched "${2}"
             ;;
-        vendor/lib*/libexynosgraphicbuffer.so)
+        vendor/lib*/libexynoscamera3.so)
             "${PATCHELF}" --add-needed libshim_ui.so "${2}"
+            ;;
+        vendor/lib/libexynosgraphicbuffer.so)
+            "${PATCHELF}" --add-needed libshim_ui.so "${2}"
+            xxd -p -c0 "${2}" | sed "s/01688e6a0899/01684e6a0899/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
+            ;;
+        vendor/lib64/libexynosgraphicbuffer.so)
+            "${PATCHELF}" --add-needed libshim_ui.so "${2}"
+            xxd -p -c0 "${2}" | sed "s/080040f9082940f900013fd6/080040f9082540f900013fd6/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
             ;;
         vendor/lib*/libskeymaster4device.so)
             "${PATCHELF}" --replace-needed libcrypto.so libcrypto-tm.so "${2}"

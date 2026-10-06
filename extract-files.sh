@@ -63,6 +63,12 @@ function blob_fixup() {
         vendor/bin/vaultkeeperd|vendor/lib64/libvkservice.so)
             sed -i 's/ro\.factory\.factory_binary/ro.vendor.factory_binary\x00/g' "${2}"
             ;;
+        vendor/bin/cass|vendor/lib/hw/audio.primary.exynos850.so|vendor/lib/libaudio-ril.so|vendor/lib64/libwrappergps.so)
+            "${PATCHELF}" --replace-needed libsecril-client.so libsecril-client-stock.so "${2}"
+            ;;
+        vendor/lib*/libsecril-client-stock.so)
+            "${PATCHELF}" --set-soname libsecril-client-stock.so "${2}"
+            ;;
         vendor/lib*/libsensorlistener.so)
             "${PATCHELF}" --add-needed libshim_sensorndkbridge.so "${2}"
             ;;

@@ -26,13 +26,18 @@
     <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
     <bool name="config_wifi_fast_bss_transition_enabled">true</bool>
     <bool name="config_wifi_p2p_mac_randomization_supported">false</bool>
-    <bool name="config_wifi_softap_acs_supported">false</bool>
+    <bool name="config_wifi_softap_acs_supported">true</bool>
     <bool name="config_wifiSofapClientForceDisconnectSupported">false</bool>
+    <bool name="config_wifiSoftApDynamicCountryCodeUpdateSupported">true</bool>
+    <bool name="config_wifiSoftapAutoAppendLowerBandsToBandConfigurationEnabled">false</bool>
+    <bool name="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported">false</bool>
+    <bool name="config_wifiSoftapPassphraseAsciiEncodableCheck">false</bool>
     <bool name="config_wifiSoftapResetChannelConfig">false</bool>
     <bool name="config_wifiSoftapResetHiddenConfig">false</bool>
     <bool name="config_wifiSoftapResetMaxClientSettingConfig">false</bool>
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
-    <bool name="config_wifi5ghzSupport">false</bool>
+    <bool name="config_wifi_softap_sae_supported">true</bool>
+    <bool name="config_wifi5ghzSupport">true</bool>
     <integer name="config_wifiHardwareSoftapMaxClientCount">10</integer>
     <string name="config_wifiSoftap2gChannelList" translatable="false">1-11</string>
     <string name="config_wifiSoftap5gChannelList" translatable="false">149</string>

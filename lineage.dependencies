@@ -21,7 +21,7 @@
     },
     {
         "remote": "galaxym12development",
-        "repository": "android_kernel_samsung_m12",
+        "repository": "android_kernel_samsung_exynos850",
         "target_path": "kernel/samsung/exynos850",
         "branch": "android-14.0"
     },

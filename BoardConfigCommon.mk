@@ -67,9 +67,7 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=exynos850 androidboot.selinux=enfor
 $(call soong_config_set,samsungCameraVars,usage_64bit,true)
 
 ## Dynamic Partitions
-BOARD_SUPER_PARTITION_SIZE := 6018826240
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 6017777664
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
     vendor \
@@ -140,7 +138,6 @@ BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/$(TARGET_SOC).cfg
 
 ## DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
-BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(TARGET_DEVICE).cfg
 
 ## Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop

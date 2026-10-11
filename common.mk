@@ -287,10 +287,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
 
-# Touch HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.samsung
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung
